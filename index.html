@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastgele Şifre Üretici</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Rastgele Şifre Üretici</h2>
+        <button onclick="startProcess()">Havalı Şifre Üret</button>
+
+        <div id="questions" style="display: none;">
+            <div class="question" id="lengthQuestion">
+                Lütfen şifrenin uzunluğunu yazın:
+                <input type="number" id="length" min="6" max="20">
+                <input type="button" value="Onayla" onclick="askCharacterType()">
+            </div>
+        </div>
+
+        <div id="charTypeQuestion" style="display: none;">
+            <div class="question">
+                Rakam mı kullanılsın, harf mi, yoksa her ikisi mi?
+                <div class="radio-buttons">
+                    <input type="radio" name="charType" id="letters" onclick="enableUppercaseQuestion()"> Harf
+                    <input type="radio" name="charType" id="numbers" onclick="disableUppercaseQuestion()"> Rakam
+                    <input type="radio" name="charType" id="both" onclick="enableUppercaseQuestion()"> Her ikisi
+                </div>
+                <input type="button" value="Onayla" onclick="askSpecialChar()">
+            </div>
+        </div>
+
+        <div id="uppercaseQuestion" style="display: none;">
+            <div class="question">
+                Büyük harf kullanılsın mı?
+                <input type="radio" name="uppercase" id="uppercaseYes"> Evet
+                <input type="radio" name="uppercase" id="uppercaseNo"> Hayır
+                <input type="button" value="Onayla" onclick="askSpecialChar()">
+            </div>
+        </div>
+
+        <div id="specialCharQuestion" style="display: none;">
+            <div class="question">
+                Şifrede sembol bulunsun mu?
+                <input type="radio" name="specialChar" id="specialCharYes"> Evet
+                <input type="radio" name="specialChar" id="specialCharNo"> Hayır
+                <input type="button" value="Olustur" onclick="generatePassword()">
+            </div>
+        </div>
+
+        <div id="passwordResult" class="result" style="display: none;">
+            Şifreniz: <span id="generatedPassword"></span>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
