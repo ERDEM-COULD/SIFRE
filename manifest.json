@@ -1,0 +1,25 @@
+{
+  "name": "ŞİFRE ÜRETİCİ",
+  "short_name": "ŞİFRE ÜRETİCİSİ",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2575fc",
+  "description": "Canlı hava durumu uygulaması ile anlık hava durumunu öğrenin.",
+  "icons": [
+    {
+      "src": "icon-192.",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "orientation": "portrait",
+  "scope": "/",
+  "id": "/",
+  "lang": "tr"
+}
