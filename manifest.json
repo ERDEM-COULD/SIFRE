@@ -1,21 +1,21 @@
 {
-  "name": "ŞİFRE ÜRETİCİ",
-  "short_name": "ŞİFRE ÜRETİCİSİ",
+  "name": "SIFRE URETICI",
+  "short_name": "SIFRE URETICI",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2575fc",
-  "description": "Canlı hava durumu uygulaması ile anlık hava durumunu öğrenin.",
+  "description": "Kendinize güvenli bir şifre oluşturun!",
   "icons": [
     {
       "src": "icon.jpeg",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/jpeg"
     },
     {
       "src": "icon.jpeg",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/jpeg"
     }
   ],
   "orientation": "portrait",
